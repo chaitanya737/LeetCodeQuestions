@@ -1,3 +1,4 @@
+https://practice.geeksforgeeks.org/problems/find-pair-given-difference1559/1
 // { Driver Code Starts
 #include<bits/stdc++.h>
  
