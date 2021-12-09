@@ -1,3 +1,4 @@
+https://practice.geeksforgeeks.org/problems/count-triplets-with-sum-smaller-than-x5549/1
 // { Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
