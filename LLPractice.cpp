@@ -35,6 +35,17 @@ bool searchLL(node* head , int key){
     }
     return false;
 }
+void reverseLL(node* &head){
+    node* cur = head;
+    node* prev = NULL , *n = NULL;
+    while(cur != NULL){
+        n = cur->next;
+        cur->next = prev;
+        prev = cur;
+        cur = n;
+    }
+    head = prev;
+}
 void PrintLL(node *head){
     while(head != NULL){
         cout<<head->data << " ";
@@ -51,8 +62,10 @@ int main(){
     InsertAttail(head , tail , 20);
     PrintLL(head);
     cout<<endl;
-    bool val = searchLL(head , 20);
-    cout<<val;
+    // bool val = searchLL(head , 20);
+    // cout<<val;
+    reverseLL(head);
+    PrintLL(head);
 
     return 0;
 }
