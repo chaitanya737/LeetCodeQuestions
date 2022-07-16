@@ -12,7 +12,7 @@ struct Node
 };
 
 vector<int> leftView(struct Node *root);
-
+    
 // Utility function to create a new Tree Node
 Node* newNode(int val)
 {
